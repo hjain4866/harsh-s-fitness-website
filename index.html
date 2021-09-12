@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh's Fitness</title>
+    <link rel="stylesheet" href="Css/Style.css">
+
+    <style>
+        /* Reset Css */
+        body {
+            box-sizing: border-box;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background-image: url('img/weightlifting-2427461_1920.jpg');
+        }
+
+        header {
+            position: sticky;
+            margin-top: 15px;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 17px;
+            top: 12px;
+            text-align: centre;
+        }
+
+        .left img {
+            width: 75px;
+            text-align: center;
+
+        }
+
+        .left div {
+            font-size: 16px;
+            line-height: 1em;
+            text-align: center;
+
+        }
+
+        .mid {
+            display: block;
+            margin: -14px auto;
+            width: 34%;
+        }
+
+        .right {
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            display: inline-block;
+
+        }
+
+        .nav {
+            display: inline-block;
+        }
+
+        .nav li {
+            display: inline-block;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 18px 18px;
+            font-size: 18px;
+        }
+
+        .nav li a:hover,
+        .nav li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .btn {
+
+            padding: 4px;
+            border-radius: 7px;
+            border: solid white;
+            margin: 3px;
+            cursor: pointer;
+            color: white;
+            background-color: black;
+        }
+
+        .btn:hover {
+            color: grey;
+
+        }
+
+        .container {
+            margin: 120px 32px;
+            padding: 28px 17px;
+            border: 3px solid #9d9696;
+            border-radius: 75px;
+            height: 450px;
+        }
+
+        .container h2 {
+            margin: auto;
+            text-align: center;
+        }
+
+        .form {
+            margin-top: 41px;
+            margin-left: 110px;
+        }
+
+        .form input {
+            width: 322px;
+            background-color: black;
+            color: white;
+            margin-top: 25px;
+            font-size: 15px;
+            font-family: cursive;
+            margin-left: 24px;
+
+        }
+
+        .form label {
+            color: orange;
+        }
+
+        .form button {
+            width: 250px;
+            margin: auto;
+            display: block;
+            padding: 4px;
+            border-radius: 7px;
+            border: solid white;
+            margin-top: 65px;
+            cursor: pointer;
+            color: white;
+            background-color: black;
+        }
+
+        .form button:hover {
+            color: grey;
+        }
+
+        .form #gen1 {
+            width: 13px;
+        }
+
+        .form #gen2 {
+            width: 13px;
+        }
+
+        .form div {
+            color: orange;
+        }
+        /* .top{
+            position: sticky;
+        } */
+      
+    </style>
+</head>
+
+<body>
+    <div class="top">
+
+        <header class="header">
+            <nav class="navigationbar">
+            <!-- Left box for logo -->
+            <div class="left">
+                <img src="img/—Pngtree—gym logo cartoon_5393334.png" alt="">
+                <div>Harsh's Fitness</div>
+            </div>
+
+            <!-- Mid box for navbar -->
+            <div class="mid">
+                <ul class="nav">
+                    <li> <a href="#" class="active">Home</a> </li>
+                    <li> <a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Right box for buttons -->
+            <div class="right">
+                <button class="btn">
+                    Call us Now
+                </button>
+                <button class="btn">
+                    Email Now
+                </button>
+            </div>
+        </nav>
+        </header>
+    </div>
+
+    <div class="container">
+        <h2>Join The Best Gym Of Delhi Now</h2>
+        <form action="noaction.php" class="form">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+
+            <div>
+                <label for="Age">Age</label>
+                <input type="number" id="age" placeholder="Enter your Age">
+
+            </div>
+
+            <div>
+                <label for="gender">Gender</label>
+                Male : <input type="radio" name="gender" id="gen1">
+                Female : <input type="radio" name="gender" id="gen2">
+            </div>
+
+            <div>
+                <label for="name">Address</label>
+                <input type="text" id="name" placeholder="Enter your Address">
+            </div>
+
+            <div>
+                <button>Sumbit</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
